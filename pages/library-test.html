@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="app-container">
+        
+        <header class="app-header">
+            <div class="search-bar">
+                <span class="icon-search"></span>
+                <input type="text" placeholder="Search library" aria-label="Search">
+            </div>
+            <button class="btn-add" aria-label="Add new">+</button>
+        </header>
+
+        <nav class="library-filters">
+            <button class="filter-item active">Group</button>
+            <button class="filter-item">Recents</button>
+            <div class="view-icons">
+                <span class="icon-grid"></span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            
+            <section class="library-list">
+                <a href="#" class="list-item">
+                    <span>Playlists</span>
+                    <span class="arrow-right"></span>
+                </a>
+                <a href="#" class="list-item">
+                    <span>Playlists by Spotify</span>
+                    <span class="arrow-right"></span>
+                </a>
+                <a href="#" class="list-item">
+                    <span>Albums</span>
+                    <span class="arrow-right"></span>
+                </a>
+                <a href="#" class="list-item">
+                    <span>Folders</span>
+                    <span class="arrow-right"></span>
+                </a>
+                <a href="#" class="list-item">
+                    <span>Artists</span>
+                    <span class="arrow-right"></span>
+                </a>
+            </section>
+
+            <section class="desktop-browse-section">
+                <h3>Recent searches</h3>
+                <div class="recent-grid">
+                    <article class="card">
+                        <img src="artist-daft-punk.jpg" alt="Daft Punk">
+                        <p>Daft Punk</p>
+                    </article>
+                    </div>
+
+                <h3>Browse all</h3>
+                <div class="genres-grid">
+                    <div class="genre-card pop">Pop</div>
+                    <div class="genre-card country">Country</div>
+                    </div>
+            </section>
+        </main>
+
+        <footer class="player-bar">
+            <div class="song-info">
+                <img src="get-lucky-cover.jpg" alt="Get Lucky Cover" class="album-art">
+                <div class="text-info">
+                    <h4 class="song-title">Get Lucky (feat. Pharrell Willi...</h4>
+                    <p class="artist-name">Daft Punk</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="btn-control" aria-label="Add to playlist">+</button>
+                <button class="btn-control btn-play" aria-label="Play"></button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 45%;"></div>
+            </div>
+        </footer>
+
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-item">
+                <span class="icon-home"></span>
+                <label>Home</label>
+            </a>
+            <a href="#discover" class="nav-item">
+                <span class="icon-discover"></span>
+                <label>Discover</label>
+            </a>
+            <a href="#search" class="nav-item">
+                <span class="icon-search"></span>
+                <label>Search</label>
+            </a>
+            <a href="#library" class="nav-item active">
+                <span class="icon-library"></span>
+                <label>Library</label>
+            </a>
+            <a href="#me" class="nav-item">
+                <span class="icon-me"></span>
+                <label>Me</label>
+            </a>
+        </nav>
+
+    </div>
+</body>
+</html>

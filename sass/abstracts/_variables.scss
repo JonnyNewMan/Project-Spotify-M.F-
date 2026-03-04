@@ -17,3 +17,93 @@ $font-weight-bold:   700;
 // Transitions
 $transition-fast: 0.15s ease;
 $transition-base: 0.2s ease;
+
+// // Colors
+
+// // Background Colors
+// $bg-black: #060606;      // Main background (Sidebar, Player)
+// $bg-dark-grey: #111111;  // Main content area background, Grid-bg
+// $bg-light-grey: #202020; // Cards, navbar, aside and elements background on Hover
+
+// // Text Colors
+// $text-white: #E0E0E0;      // Headings, active elements
+// $text-grey: #898989;       // Regular text, artist names, descriptions
+// $text-light-grey: #DBDBDB; // Muted text
+
+// //Accent Color
+
+// $green: #13BF51; //brand's iconic accent green
+
+// // Additional Colors 
+
+// $color: #323232;
+// $color: #6E6E6E;
+// $color: #1A1A1A;
+
+$color-bg-primary:       #121212;
+$color-bg-secondary:     #181818;
+$color-bg-sidebar:       #000000;
+$color-bg-player:        #181818;
+$color-bg-header:        #121212;
+$color-bg-card:          #282828;
+$color-bg-card-hover:    #3e3e3e;
+$color-bg-chip-active:   #ffffff;
+$color-bg-chip-inactive: #2a2a2a;
+
+// Colors - Accent
+$color-accent-green:  #1db954;
+$color-accent-blue:   #1e3a8a;
+
+// Colors - Text
+$color-text-primary:      #ffffff;
+$color-text-secondary:    #b3b3b3;
+$color-text-muted:        #6a6a6a;
+$color-chip-active-text:  #000000;
+
+// Colors - Border
+$color-border:        #282828;
+$color-player-border: #282828;
+
+// Rectangle colors behind card images — change these freely
+$color-rect-1: #1db954;
+$color-rect-2: #e91e8c;
+
+// Spacing
+$spacing-xs:  4px;
+$spacing-sm:  8px;
+$spacing-md:  16px;
+$spacing-lg:  24px;
+$spacing-xl:  32px;
+$spacing-xxl: 48px;
+
+// Sizes
+$sidebar-width:   180px;
+$player-height:   90px;
+$header-height:   56px;
+$card-image-size: 170px;
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 50px;
+
+// Typography
+$font-family-base: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-xs:   11px;
+$font-size-sm:   12px;
+$font-size-base: 14px;
+$font-size-md:   16px;
+$font-size-lg:   18px;
+$font-size-xl:   24px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold:   700;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.2s ease;
+
+
+
+

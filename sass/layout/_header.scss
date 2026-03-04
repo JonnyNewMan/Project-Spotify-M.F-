@@ -4,3 +4,78 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+
+.topbar  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.topbar-nav {
+  display: flex;
+}
+
+.app {
+
+  font-size: 14px;
+  height: 41px;
+  
+
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ 
+}
+
+
+
+// .test-div {
+//   display: flex;
+//   width: 40%;
+// }
+
+.nav-items {
+
+  display: flex;
+  margin-top: 7px;
+  font-size: 14px;
+  list-style: none;
+  
+  // align-items: center;
+  // height: 100%;
+
+}  
+
+
+
+.li-test a {
+
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+// .nav-text span {
+//   text-align: center;
+
+// }
+
+
+.sidebar-in-nav {
+  display: flex;
+}
+
+.sidebar-list {
+  display: flex;
+  // justify-content: flex-start;
+  // height: 100%;
+  width: 50%;
+}
+
+
+

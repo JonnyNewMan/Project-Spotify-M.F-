@@ -1,0 +1,94 @@
+/* =====================
+  Reset / Base
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Circular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #121212;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =====================
+  Helpers
+===================== */
+/* =====================
+  App Layout
+===================== */
+/* =====================
+  Sidebar Navigation (merged look)
+===================== */
+/* =====================
+  Top Header
+===================== */
+/* =====================
+  Global Header (matches screenshot layout)
+===================== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-links a {
+  position: sticky;
+}
+
+.test-div {
+  display: flex;
+}
+
+.sidebar-in-nav {
+  display: flex;
+}
+
+/* =====================
+  Filter Chips
+===================== */
+/* =====================
+  Sections / Cards
+===================== */
+/* =====================
+  Bottom Player (matches Figma screenshot)
+===================== *//*# sourceMappingURL=main.css.map */
