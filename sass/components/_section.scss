@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+/* =====================
+  Content Section
+===================== */
+
+.content-section {
+  margin-bottom: $space-2xl;
+}
+
+.content-section__head {
+  @include flex-between;
+  gap: $space-md;
+  margin-bottom: $space-md;
+}
+
+.content-section__title {
+  color: $color-text-primary;
+  font-family: satoshi bold;
+  font-size: 20px;
+}
+
+.content-section__actions {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+}
+
+.content-section__button {
+  @include flex-center;
+  width: 18px;
+  height: 18px;
+}
+
+.content-section__button-icon {
+  width: 14px;
+  height: 14px;
+  border: 1px dashed rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+}

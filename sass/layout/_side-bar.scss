@@ -1,0 +1,62 @@
+/* =====================
+  Sidebar Navigation (merged look)
+===================== */
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+
+/* =====================
+  Sidebar Styles
+===================== */
+
+.sidebar {
+  min-height: 100vh;
+  padding: $space-md 0;
+  
+  background-color: $color-body;
+}
+
+.sidebar__nav {
+  height: 100%;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+}
+
+.sidebar__item {
+  position: relative;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  min-height: 32px;
+  padding: 0 $space-md 0 12px;
+  color: $color-text-secondary;
+  transition: color $transition-base, background-color $transition-base;
+}
+
+.sidebar__item--active .sidebar__link {
+  color:$color-text-secondary;
+}
+
+.sidebar__icon {
+  @include icon-box(40);
+  border-radius: $radius-xs;
+}
+
+.sidebar__item--active .sidebar__icon {
+  border-color: $color-text-primary;
+  margin-left: 10px;
+}
+
+.sidebar__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}

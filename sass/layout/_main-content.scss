@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as *;
+
+/* =====================
+  Main Content Styles
+===================== */
+
+.main-content {
+  flex: 1;
+  padding: $space-md $space-2xl $space-3xl;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 0;
+   overflow-y: auto;
+  overflow-x: hidden;
+   border:1px solid $color-divider;
+   border-radius: 10px;
+   margin-bottom: 4px;
+   
+
+  
+
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  
+}
+

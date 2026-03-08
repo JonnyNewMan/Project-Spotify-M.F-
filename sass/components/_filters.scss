@@ -4,3 +4,42 @@
 @use "../abstracts/variables" as *;
 
 
+@use "../abstracts/variables" as *;
+
+/* =====================
+  Filter Chips
+===================== */
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  margin-bottom: $space-xl;
+}
+
+.filters__chip {
+  min-height: 29px;
+  padding: 0 14px;
+  border-radius: $radius-sm;
+  background-color: $color-chip;
+  color: $color-text-secondary;
+  font-size: 14px;
+  line-height: 1;
+  transition: background-color $transition-base, color $transition-base;
+}
+
+.filters__chip--active {
+  background-color: $color-chip;
+  color:$color-text-secondary;
+  font-size: 14px;
+}
+
+.filters__chip--active:hover{
+  color:black;
+  background-color: white;
+
+}
+.filters__chip:hover{
+  color:black;
+  background-color: white;
+}

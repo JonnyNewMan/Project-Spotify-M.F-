@@ -1,14 +1,20 @@
-@use "abstracts/variables";
-@use "abstracts/mixins";
+@use "../sass/abstracts/variables" ;
+@use "../sass/abstracts/mixins" ;
 
-@use "base/reset";
-@use "base/helpers";
+@use "../sass/base/reset";
+@use "../sass/base/base";
 
-@use "layout/app";
-@use "layout/sidebar";
-@use "layout/topbar";
-@use "layout/header";
+@use "../sass/layout/app";
+@use "../sass/layout/side-bar";
+@use "../sass/layout/top-bar" ;
+@use "../sass/layout/header";
 
-@use "components/filters";
-@use "components/cards";
-@use "components/player";
+@use "../sass/components/filters";
+@use "../sass/components/cards";
+@use "../sass/components/player";
+@use "../sass/components/section";
+@use "../sass/base/typography";
+@use "../sass/layout/main-content";
+@use "../sass/abstracts/fonts";
+
+
