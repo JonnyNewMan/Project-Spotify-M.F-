@@ -193,3 +193,60 @@
   color: $color-text-secondary;
   font-size: 11px;
 }
+
+@include mobile {
+  .cards-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .cards-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .music-card {
+    min-width: 0;
+  }
+
+  .cards-row .music-card {
+    flex: 0 0 140px;
+  }
+
+  .music-card__title {
+    font-size: 14px;
+  }
+
+  .music-card__subtitle {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .music-card__media {
+    width: 100%;
+  }
+
+  .cards-slider {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .cards-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards-slider .music-card {
+    flex: 0 0 140px;
+    scroll-snap-align: start;
+  }
+}
+
+
+  

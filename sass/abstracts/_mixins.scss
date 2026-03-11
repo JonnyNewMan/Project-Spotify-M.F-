@@ -21,7 +21,11 @@
   height:$icon-sm;
   flex-shrink: 0;
 }
-
+@mixin icon-box-2($icon-pr){
+  width: $icon-pr;
+  height:$icon-pr;
+  flex-shrink: 0;
+}
 
 
 @mixin text-truncate($lines: 1) {
@@ -49,7 +53,7 @@
   }
 }
 
-@mixin mobile-down {
+@mixin mobile{
   @media (max-width: $bp-mobile) {
     @content;
   }

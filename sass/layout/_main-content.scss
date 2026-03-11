@@ -1,5 +1,5 @@
 @use "../abstracts/variables" as *;
-
+@use "../abstracts/mixins" as *;
 /* =====================
   Main Content Styles
 ===================== */
@@ -7,15 +7,15 @@
 .main-content {
   flex: 1;
   padding: $space-md $space-2xl $space-3xl;
-  overflow-x: hidden;
-  overflow-y: auto;
+  min-height: 0;
+  height: calc(100vh - 81px);
   min-width: 0;
    overflow-y: auto;
-  overflow-x: hidden;
+   overflow-x: hidden;
    border:1px solid $color-divider;
    border-radius: 10px;
    margin-bottom: 4px;
-   
+    
 
   
 
@@ -24,10 +24,22 @@
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    
     display: none;
   }
   
 }
 
+@include mobile{
+  .main-content {
+    height: 100dvh;
+    padding: 16px 16px 170px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: $color-body;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+}

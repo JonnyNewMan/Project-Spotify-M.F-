@@ -12,8 +12,8 @@
 
 .sidebar {
   min-height: 100vh;
-  padding: $space-md 0;
-  
+  padding: 7px 0;
+  margin-bottom: 30px;
   background-color: $color-body;
 }
 
@@ -29,13 +29,16 @@
 
 .sidebar__item {
   position: relative;
+  width: 248px;
+  height: 40px;
+  border-radius: 5px;
 }
 
 .sidebar__link {
   display: flex;
   align-items: center;
   gap: $space-sm;
-  min-height: 32px;
+  min-height: 40px;
   padding: 0 $space-md 0 12px;
   color: $color-text-secondary;
   transition: color $transition-base, background-color $transition-base;
@@ -46,17 +49,26 @@
 }
 
 .sidebar__icon {
-  @include icon-box(40);
+  @include icon-box($icon-pr);
   border-radius: $radius-xs;
+  object-fit: cover;
 }
 
-.sidebar__item--active .sidebar__icon {
-  border-color: $color-text-primary;
-  margin-left: 10px;
+.sidebar__item--active:hover {
+  background-color: #202020;
+ 
+
 }
 
 .sidebar__text {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1;
+  font-family: $font-primary;
+}
+
+@include mobile {
+  .sidebar {
+    display: none;
+  }
 }

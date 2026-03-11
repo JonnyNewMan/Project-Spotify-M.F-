@@ -2,6 +2,7 @@
   Helpers
 ===================== */
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 
 
@@ -9,23 +10,21 @@
   Base
 ===================== */
 
-html,
 body {
-  height: 100%;
-}
 
-body {
   min-width: 1200px;
   background-color: $color-body;
   color: $color-text-primary;
   font-family: $font-primary;
+  overflow: hidden;
 
   }
   
-
-
-.app {
-  min-height: 100vh;
-  background-color: $color-body;
+@include mobile {
+  body {
+    min-width: 320px;
+    overflow: hidden;
+  }
 }
+
 

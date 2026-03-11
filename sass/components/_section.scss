@@ -17,7 +17,7 @@
 
 .content-section__title {
   color: $color-text-primary;
-  font-family: satoshi bold;
+  font-family: $font-middle;
   font-size: 20px;
 }
 
@@ -27,15 +27,38 @@
   gap: $space-sm;
 }
 
+
 .content-section__button {
   @include flex-center;
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
 }
 
 .content-section__button-icon {
-  width: 14px;
-  height: 14px;
-  border: 1px dashed rgba(255, 255, 255, 0.55);
+  width: 30px;
+  height: 30px;
+ 
   border-radius: 50%;
+}
+
+@include mobile {
+  .content-section {
+    margin-bottom: 28px;
+  }
+
+  .content-section__head {
+    margin-bottom: 14px;
+  }
+
+  .content-section__title {
+    font-size: 18px;
+  }
+
+  .content-section__actions {
+    gap: 6px;
+  }
+
+  .content-section__button:not(:last-child) {
+    display: none;
+  }
 }

@@ -16,8 +16,8 @@
   display: grid;
   grid-template-columns: $sidebar-width 1fr;
   grid-template-rows: 1fr;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100vh;
+    overflow: hidden;
 }
 
 .content-area {
@@ -25,5 +25,18 @@
   flex-direction: column;
   min-width: 0;
   min-height: 0;
-  overflow: hidden;
+ overflow: hidden;
+}
+
+@include mobile {
+  .app {
+    display: block;
+    height: 100dvh;
+   
+  }
+
+  .content-area {
+    height: 100dvh;
+    
+  }
 }
