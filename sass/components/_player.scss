@@ -81,6 +81,9 @@
  
 }
 
+.player-bar__action-icon--mobile--active{
+  display: none;
+}
 .player-bar__cover {
   width: 44px;
   height: 44px;
@@ -148,11 +151,11 @@
 
 .player-bar__control-icon
 .player-bar__action-icon {
-  width: 30px;
-  height: 30px;
-  
+ @include icon($icon-lg);
+  object-fit: contain;
   border-radius: 4px;
- 
+ display: block;
+ opacity: 1;
 }
 
 .player-bar__time {
@@ -172,6 +175,9 @@
   font-size: 12px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.45);
+}
+.player-bar__action-icon--mobile{
+ display: none;
 }
 
 @include mobile {
@@ -257,7 +263,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .player-bar__action-icon--mobile {
+  .player-bar__action-icon--mobile{
     width: 30px;
     height: 30px;
     display: block;

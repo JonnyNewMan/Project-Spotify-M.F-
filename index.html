@@ -97,33 +97,27 @@
       <header class="top-header">
         <nav class="top-header__nav" aria-label="Main navigation">
           <ul class="top-header__list">
-            <li class="top-header__item top-header__item--active">
-              <a href="#" class="top-header__link">
-                <span class="top-header__icon top-header__icon--active">
-                  <img class="default-image" src="./assets/icons/homebg.svg" alt="default icon">
-                  <img class="hover-image" src="./assets/icons/homehv.svg" alt="hover-image"></span>
+            <li class="top-header__item ">
+              <a href="#" class="top-header__link home-icon">
+                <span class="top-header__icon top-header__icon--active"><img src="./assets/icons/home.svg" >
+                  </span>
                   <span>Home</span>
               </a>
             </li>
 
-            <li class="top-header__item top-header__item--active">
-              <a href="#" class="top-header__link">
-                <span class="top-header__icon icon--active" ><img class="default-image" src="./assets/icons/Star 1.svg" alt="default icon">
-                  <img class="hover-image" src="./assets/icons/starhv.svg" alt="hover-image"></span>
+            <li class="top-header__item ">
+              <a href="#" class="top-header__link discover-icon">
+                <span class="top-header__icon top-header__icon--active" >
+                  <img  src="./assets/icons/Star 1.svg" ></span>
                 <span>Discover</span>
               </a>
             </li>
-            <li class="top-header__item top-header__item--search">
-  <form class="top-header__search-box" action="#" role="search">
-    <span class="top-header__search-icon"><img src="./assets/icons/search.svg" ></span>
-    <input
-      class="top-header__search-input"
-      type="text"
-      placeholder="Search"
-      aria-label="Search"
-    >
-  </form>
-</li>
+            <li class="top-header__item">
+              <a href="#" class="top-header__link search-icon">
+              <span class="top-header__icon top-header__icon--active"><img src="./assets/icons/search.svg" ></span>
+             <span>Search</span>
+           </a>
+         </li>
 
             
           </ul>
@@ -176,7 +170,7 @@
       <img src="./assets/images/playerbg.png" alt="">
     </div>
     <div class="quick-mix-card__meta">
-      <p class="quick-mix-card__title">Get Lucky (feat....</p>
+      <p class="quick-mix-card__title">Get Lucky feat....</p>
       <p class="quick-mix-card__artist">Daft Punk</p>
     </div>
   </a>
@@ -502,7 +496,7 @@
     <div class="player-bar__playback">
       <div class="player-bar__controls">
         <button class="player-bar__control player-bar__control--play" type="button" aria-label="Pause">
-          <span class="player-bar__control-icon"><img src="./assets/icons/play.svg" ></span>
+          <span class="player-bar__control-icon"><img src="./assets/icons/stop.svg" ></span>
         </button>
 
         <button class="player-bar__control" type="button" aria-label="Previous">
@@ -574,14 +568,16 @@
       </button>
 
       <button class="player-bar__action " type="button" aria-label="Mini player">
-        <span class="player-bar__action-icon player-bar__action-icon--mobile"><img src="./assets/icons/DJ.svg"></span>
+        <span class="player-bar__action-icon "><img src="./assets/icons/DJ.svg"></span>
+        <span class="player-bar__action-icon--mobile"><img src="./assets/icons/playlistpc.svg"></span>
       </button>
 
       <button class="player-bar__action" type="button" aria-label="Menu">
-        <span class="player-bar__action-icon player-bar__action-icon--mobile"><img src="./assets/icons/add.svg"></span>
+        <span class="player-bar__action-icon "><img src="./assets/icons/queue.svg"></span>
+        <span class="player-bar__action-icon--mobile"><img src="./assets/icons/playjm.svg"></span>
       </button>
     </div>
-    
+   
   </div>
 </footer>
 <nav class="mobile-nav" aria-label="Mobile navigation">

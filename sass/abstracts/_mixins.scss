@@ -16,17 +16,18 @@
   justify-content: space-between;
 }
 
-@mixin icon-box($icon-sm){
-  width: $icon-sm;
-  height:$icon-sm;
+@mixin icon($size) {
+  width: $size;
+  height: $size;
+ 
   flex-shrink: 0;
 }
-@mixin icon-box-2($icon-pr){
-  width: $icon-pr;
-  height:$icon-pr;
+@mixin icon-hover($size){
+   width: $size;
+  height: $size;
   flex-shrink: 0;
+  
 }
-
 
 @mixin text-truncate($lines: 1) {
   overflow: hidden;
