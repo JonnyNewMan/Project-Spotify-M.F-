@@ -16,6 +16,31 @@
   margin-bottom: 30px;
   background-color: $color-body;
 }
+.sidebar__link--with-arrow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar__arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-shrink: 0;
+}
+
+.sidebar__arrow img{
+  @include icon($icon-lg);
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
 
 .sidebar__nav {
   height: 100%;
@@ -43,14 +68,19 @@
   color: $color-text-secondary;
   transition: color $transition-base, background-color $transition-base;
 }
+.sidebar__item:nth-child(1){
+  margin-left: 10px;
+}
 
 .sidebar__item--active .sidebar__link {
   color:$color-text-secondary;
 }
 
-.sidebar__icon{
+.sidebar__icon img{
   @include icon($icon-lg);
-  border-radius: $radius-xs;
+  height: 100%;
+  width: 100%;
+  display: block;
   object-fit: cover;
 }
 
