@@ -75,12 +75,7 @@
   content: url("/assets/icons/homebg.svg");
 }
 
-.discover-icon:hover img {
-  content: url("/assets/icons/discoverbg.svg");
-  
-  
- 
-}
+
 
 .search-icon:hover img {
   content: url("/assets/icons/searchbg.svg");
@@ -102,7 +97,8 @@
 
 
 .top-header__action-icon img {
-   @include icon($icon-lg);
+   width: 30px;
+   height: 30px;
 
   display: block;
   object-fit: contain;
@@ -116,7 +112,11 @@
 
 
 
-
+.icon-button--active{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
 
 
 

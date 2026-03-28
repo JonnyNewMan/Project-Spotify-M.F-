@@ -11,111 +11,10 @@
 /* =====================
   Card Styles
 ===================== */
-.music-card--discover {
-  --rect-back-color: #CE6E9A4D;
-  --rect-middle-color: #CE6E9A26;
-}
-
-.music-card--mix-1 {
-  --rect-back-color: #203f38;
-  --rect-middle-color: #9be7dd;
-}
-
-.music-card--mix-2 {
-  --rect-back-color: #57282d;
-  --rect-middle-color: #f2bec9;
-}
-
-.music-card--mix-3 {
-  --rect-back-color: #31452f;
-  --rect-middle-color: #badfb6;
-}
-
-.music-card--mix-4 {
-  --rect-back-color: #4f4018;
-  --rect-middle-color: #b89a39;
-}
-
-.music-card--mix-5 {
-  --rect-back-color: #4a3a20;
-  --rect-middle-color: #c8a978;
-}
-
-.music-card--nirvana {
-  --rect-back-color: #2c3f22;
-  --rect-middle-color: #93b765;
-}
-
-.music-card--fallout {
-  --rect-back-color: #4a2b2b;
-  --rect-middle-color: #c87575;
-}
-
-.music-card--rock {
-  --rect-back-color: #5f6519;
-  --rect-middle-color: #8a9520;
-}
-
-.music-card--doom {
-  --rect-back-color: #6e6417;
-  --rect-middle-color: #a79a1f;
-}
-
-.music-card--pop {
-  --rect-back-color: #355a63;
-  --rect-middle-color: #6da8b7;
-}
-
-.music-card--rap {
-  --rect-back-color: #2b2f6d;
-  --rect-middle-color: #5661d9;
-}
-
-.music-card--happy {
-  --rect-back-color: #4e4332;
-  --rect-middle-color: #b89d6f;
-}
-
-.music-card--bowie {
-  --rect-back-color: #40311f;
-  --rect-middle-color: #9e7b49;
-}
-
-.music-card--upbeat {
-  --rect-back-color: #3c2e55;
-  --rect-middle-color: #8b6ec2;
-}
-
-.music-card--sixties {
-  --rect-back-color: #3f4430;
-  --rect-middle-color: #92a06f;
-}
 
 
-.music-card__rect {
-  position: absolute;
-  left: 50%;
-  border-radius: $radius-sm;
-  transform: translateX(-50%);
-}
 
-.music-card__rect--back {
-  top: -8px;
-  z-index: 0;
-  width: calc(100% - 16px);
-  height: 100%;
-  opacity: 0.55;
-  background-color: var(--rect-back-color);
-}
 
-.music-card__rect--middle {
-  top: -4px;
-  z-index: 1;
-  width: calc(100% - 8px);
-  height: 100%;
-  opacity: 0.8;
-  background-color: var(--rect-middle-color);
-}
 
 .cards-row {
   display: grid;
@@ -128,8 +27,7 @@
   min-width: 0;
   color: $color-text-primary;
 
-  --rect-back-color: #3f3f3f;
-  --rect-middle-color: #5a5a5a;
+
 }
 
 .music-card__media {
@@ -139,30 +37,7 @@
   margin-bottom: $space-sm;
 }
 
-.music-card__rect {
-  position: absolute;
-  left: 50%;
-  border-radius: $radius-sm;
-  transform: translateX(-50%);
-}
 
-.music-card__rect--back {
-  top: -8px;
-  z-index: 0;
-  width: calc(100% - 16px);
-  height: 100%;
-  opacity: 0.55;
-  background-color: var(--rect-back-color);
-}
-
-.music-card__rect--middle {
-  top: -4px;
-  z-index: 1;
-  width: calc(100% - 8px);
-  height: 100%;
-  opacity: 0.8;
-  background-color: var(--rect-middle-color);
-}
 
 .music-card__image {
   position: relative;
@@ -170,7 +45,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: $radius-sm;
-  background-color: $color-placeholder;
+
   box-shadow: $shadow-soft;
   overflow: hidden;
 

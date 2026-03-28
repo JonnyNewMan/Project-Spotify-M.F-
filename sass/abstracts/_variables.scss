@@ -1,7 +1,9 @@
+@use "./fonts" as *;
+
 
 $font-primary: 'Satoshi-Regular';
 $font-middle: 'satoshi-bold';
-$font-secondery:'Satoshi-Medium';
+$font-secondary:'Satoshi-Medium';
 $color-body:#000000;
 $color-surface: #0b0b0b;
 $color-surface-secondary: #111214;
@@ -48,7 +50,7 @@ $transition-base: 0.2s ease;
 
 $bp-desktop: 1200px;
 $bp-tablet: 992px;
-$bp-mobile: 786px;
+$bp-mobile: 768px;
 $icon-sm: 18px;
 $icon-md: 22px;
 $icon-lg: 25px;

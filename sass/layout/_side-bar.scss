@@ -12,9 +12,9 @@
 
 .sidebar {
   min-height: 100vh;
-  margin-top:10px;
-  margin-bottom: 30px;
+  margin:10px 7px 30px 7px;
   background-color: $color-body;
+ 
 }
 .sidebar__link--with-arrow {
   display: flex;
@@ -67,9 +67,14 @@
   padding: 0 $space-md 0 12px;
   color: $color-text-secondary;
   transition: color $transition-base, background-color $transition-base;
+  margin-right: 10px;
 }
-.sidebar__item:nth-child(1){
-  margin-left: 10px;
+.sidebar__item--current{
+  padding-left: 10px;
+}
+.sidebar__item--current:hover{
+   background-color: #202020;
+ 
 }
 
 .sidebar__item--active .sidebar__link {
@@ -89,6 +94,7 @@
  
 
 }
+
 
 .sidebar__text {
   font-size: 14px;
